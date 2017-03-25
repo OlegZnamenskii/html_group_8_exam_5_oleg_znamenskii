@@ -428,21 +428,21 @@ h1,h2,h3,h4,h5 {
 	cursor: pointer;
 
 }
-.prices__inner-wrap:hover .price{
+.prices__inner:hover .price{
 	color: #d34346;
 }
-.prices__inner-wrap:hover .list__text {
+.prices__inner:hover .list__text {
 	color: #d34346;
 }
-.prices__inner-wrap:hover .fa {
+.prices__inner:hover .fa {
 	color: #d34346;
 }
-.prices__inner-wrap:hover .inner__title {
+.prices__inner:hover .inner__title {
 	border-left: 10px solid #c62f31;
 	padding-left: 22px;
 	background: #d34346;
 }
-.prices__inner-wrap:hover .btn{
+.prices__inner:hover .btn{
 	background: #d34346;
 }
 .prices__inner {
