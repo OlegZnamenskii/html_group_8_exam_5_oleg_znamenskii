@@ -1,35 +1,29 @@
-// валидация формы
+$('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  arrows: false,
+  mobileFirst: true,
+  adaptiveHeight: true,
+  responsive: [
 
-var validation = $('#reg-form').validate({
-    rules: {
-        userPassword: {
-            minlength: 8
-        }
-    }
+   {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+      
+     
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+    
+        
 
-});
-
-$('#phone').mask("+(999) 999-9999");
-
-var validation = $('#reg-formp').validate({
-    rules: {
-        userPassword: {
-            minlength: 8
-        }
-    }
-
-});
-
-$('#phone_p').mask("+(999) 999-9999");
-;
-
-//плавная прокрутка
-
-$(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 900);
-    });
+      }
+    },
+  ]
 });
