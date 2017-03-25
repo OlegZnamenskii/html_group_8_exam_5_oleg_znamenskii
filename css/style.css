@@ -3,10 +3,16 @@ body {
 	line-height: 1.3;
 	font-family: 'Open Sans', arial, sans-serif, helvetica;
 }
+h1,h2,h3,h4,h5 {
+	color: #fff;
+}
+.pd {
+	padding: 0 5%;
+}
 .container {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1170px;
 }
 .header {
 	background: #d34346;
@@ -163,60 +169,251 @@ body {
 	font-size: 1em;
 	margin: 0;
 }
+
+
+
+/************************* BACKGROUNDS COLORS  BORDERS *********************/
+
 .extra {
 	font-weight: 800;
 }
-.red {
-	background: #d05054;
+.red__bg {
+	background: #d34346;
 	border-color: #be3639;
 }
-.black {
-	background: #3f5264;
+.dark-blue__bg {
+	background: #314559;
 	border-color: #2d3946;
 }
-
-/************************* COLORS *********************/
-
 .dark-blue {
 	color: #2c3e50;
 }
-
-/******* INTRO *****************/
-.intro {
-display: flex;
+.red {
+	color: #d34346;
 }
-.intro__inner {
+.brdr-red {
+	border-left: 10px solid #c62f31;
+	padding-left: 22px;
+}
+.brdr-darkblue {
+	border-left: 10px solid #18222b;
+	padding-left: 22px;
+}
+/******* INTRO *****************/
+
+.intro__wrap {
+	background: #f7f7f7;
+	padding: 10% 0;
+}
+
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inner {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	height: 100%;
-	padding: 0 5%;
 }
-.inner__img {
 
+.inner__img {
 }
+
 .inner__title {
-	color: #bd2c30;
 	font-size: 20px;
 	font-weight: 500;
 }
+
 .inner__desc {
 	color: #212121;
 	font-size: 14px;
 	font-weight: 400;
 }
+
 @media screen and (min-width: 360px) {
 	.intro {
-	
+
+	}
 }
-}
+
 @media screen and (min-width: 480px) {
 	.intro {
-	
+
+	}
 }
-}
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 640px) {
 	.intro {
+
+	}
+
+	.intro__inner {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.intro {
+
+	}
+}
+
+@media screen and (min-width: 1070px) {
+	.intro {
+
+	}
+	.intro__inner {
+		width: 39%;
+	}
+}
+@media screen and (min-width: 1118px) {
+	.intro {
+
+	}
+	.intro__inner {
+		width: 25%;
+		padding: 0;
+	}
+	.inner__desc {
+		padding: 0 25% 0 5%;
+	}
+
+}
+
+
+/**********ABUT US ***********/
+.abut__us-wrap {
+	background: #efefef;
+}
+.abut__inner-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.abut__inner {
+	margin: 2% 0;
+}
+
+@media screen and (min-width: 1024px) {
+	.abut__inner {
+		width: 30%;
+	}
+}
+@media screen and (min-width: 1170px){
+	.pd {
+	padding: 0;
+	}
+	.abut__inner {
+		margin-right: 5%;
+		width: 30%;
+	}
+	.abut__inner:last-child {
+		margin-right: 0;
+	}
+}
+.extra__header {
+	font-weight: 800;
+	color: #fff;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.inner__title-abut {
+	color: #2c3e50;
+}
+.inner_desc-abut {
+	color: #111;
+}
+.italic__white {
+	font-style: italic;
+	background: #f7f7f7;
+	position: relative;
+	margin-bottom: 2%;
+}
+.italic__white::before {
+	content: '';
+	position: absolute;
+	bottom: -18px;
+	left: 12px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 18px 18px 0;
+	border-color: transparent #f7f7f7 transparent transparent;
+	line-height: 0px;
+	_border-color: #000000 #f7f7f7 #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.list {
+	list-style: none;
+}
+.desc__text {
+	padding-left: 1%;
+}
+.quote {
+	padding-left: 13%;
+	font-weight: 600;
+}
+
+/********** services *****/
+
+.services__inner-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.normal {
+	font-weight: normal;
+}
+.services__inner {
+	width: 100%;
+	margin-bottom: 5%;
+}
+.services__inner .fa{
+	font-size: 4em;
+}
+.center {
+	text-align: center;
+
+}
+.inner__desc {
+	text-align-last: left;
+
+}
+
+@media screen and (min-width: 541px) {
+	.services__inner {
+		width: 50%;
+	}
 	
 }
+@media screen and (min-width: 768px) {
+	.services__inner {
+		width: 33%;
+	}
+	
+}
+@media screen and (min-width: 1170px) {
+	.services__inner {
+		width: 15%;
+		margin-right: 1%;
+		padding-top: 5%;
+	}
+	.services__inner:last-child {
+		margin-right: 0;
+	}
+	.inner__desc-services {
+		font-size: 1em;
+	}
+	
+}
+
+/*********PRICES *******/
+
+.prices__inner {
+	width:  20%;
 }
