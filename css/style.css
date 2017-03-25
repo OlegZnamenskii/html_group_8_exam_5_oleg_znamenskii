@@ -477,7 +477,7 @@ h1,h2,h3,h4,h5 {
 
 
 .check-pd {
-	padding-left: 2%;
+	margin-right: : 2%;
 }
 
 @media screen and (min-width: 1170px) {
@@ -495,6 +495,33 @@ h1,h2,h3,h4,h5 {
 	.prices__inner:last-child {
 
 	}
+}
+/**********CONTACTS********************/
+
+.contacts {
+	background: #f7f7f7;
+	padding: 1%;
+}
+.contacts__title {
+	color: #314559;
+	font-weight: 500;
+}
+.contacts__disc {
+	float: left;
+width: 50%
+}
+.sub-btn {
+	margin-right: 11%;
+	padding: 1%;
+	float: right;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #d34346;
+}
+.block {
+	font-size: 1.6em;
+	display: block;
 }
 /*************FOOTER***************/
 .footer {
